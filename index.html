@@ -22,7 +22,7 @@
         <li class="nav-item"><a href="productsearch.html" class="nav-link">Product Search</a></li>
     </ul>
     </header> -->
-    <header class="text-bg-dark d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3 mb-4">
+    <header class="text-bg-dark d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3">
 
         <ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0">
         <li><a href="#" class="nav-link px-2 link-secondary">Home</a></li>
@@ -30,48 +30,100 @@
         </ul>
     </header>
     <main>
-        <div class="position-relative overflow-hidden p-3 p-md-5 m-md-3 text-center bg-image">
-          <div class="col-md-5 p-lg-5 mx-auto my-5">
-            <h1 class="display-4 fw-normal">Punny headline</h1>
-            <p class="lead fw-normal">And an even wittier subheading to boot. Jumpstart your marketing efforts with this example based on Apple’s marketing pages.</p>
-            <a class="btn btn-outline-secondary" href="#">View Product Details</a>
-          </div>
+        <div id="homePageCarousel" class="carousel slide" data-bs-ride="false">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#homePageCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#homePageCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#homePageCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="images/beverage-carousel-2-1024x256.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block bg-dark rounded bg-opacity-50">
+                  <h5>No bev?</h5>
+                  <p>We can help you fix that! Check out our selection of beverages</p>
+                  <a class="btn btn-primary" href="productdetails.html?productId=beverages" role="button">Click me!</a>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="images/confections-carousel-1024x25.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block bg-dark rounded bg-opacity-50">
+                  <h5>Got a sweet tooth?</h5>
+                  <p>We've got you covered.</p>
+                  <a class="btn btn-primary" href="productdetails.html?productId=confections" role="button">Click me!</a>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="images/produce-carousel-1024x25.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block bg-dark rounded bg-opacity-50">
+                  <h5>(Insert clever line about produce here)</h5>
+                  <p>Check out our produce section!</p>
+                  <a class="btn btn-primary" href="productdetails.html?productId=produce" role="button">Click me!</a>
+                </div>
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#homePageCarousel" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#homePageCarousel" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
         </div>
-      
-        <div class="d-md-flex flex-md-equal w-100 my-md-3 ps-md-3">
-          <div class="bg-light me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
-            <div class="my-3 p-3">
-              <h2 class="display-5">Another headline</h2>
-              <p class="lead">And an even wittier subheading.</p>
+        <div class="container px-5 my-5">
+            <div class="row gx-5 justify-content-center">
+                <div class="col-lg-8 col-xl-6">
+                    <div class="text-center">
+                        <h2 class="fw-bolder pb-4">Featured Items</h2>
+                    </div>
+                </div>
             </div>
-            <div class="bg-body shadow-sm mx-auto" style="width: 80%; height: 300px; border-radius: 21px 21px 0 0;"></div>
-          </div>
-          <div class="bg-light me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
-            <div class="my-3 py-3">
-              <h2 class="display-5">Another headline</h2>
-              <p class="lead">And an even wittier subheading.</p>
+            <div class="row">
+                <div class="col-lg-4 mb-5">
+                    <div class="card h-100 shadow">
+                        <img class="card-img" src="images/cranberry-sauce-card-600x350.jpg" alt="...">
+                        <div class="card-body p-4">
+                            <a class="text-decoration-none link-dark stretched-link" href="productdetails.html?productId=8"><h5 class="card-title mb-3">Northwoods Cranberry Sauce</h5></a>
+                            <p class="card-text mb-0">I bet you're tired of eating that regular old cranberry sauce you've been buying come try ours!</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 mb-5">
+                    <div class="card h-100 shadow">
+                        <img class="card-img" src="images/cajun-seasoning-card-600x350.jpg" alt="...">
+                        <div class="card-body p-4">
+                            <a class="text-decoration-none link-dark stretched-link" href="productdetails.html?productId=4"><h5 class="card-title mb-3">Chef Anton's Cajun Seasoning</h5></a>
+                            <p class="card-text mb-0">Nothing beats cajun seasoning straight from NOLA. Don't believe us? Put ours to the test.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 mb-5">
+                    <div class="card h-100 shadow">
+                        <img class="card-img" src="images/coffee-card-600x350.jpg" alt="...">
+                        <div class="card-body p-4">
+                            <a class="text-decoration-none link-dark stretched-link" href="#!"><h5 class="card-title mb-3">Ipoh Coffee</h5></a>
+                            <p class="card-text mb-0">I know how you software developers don't really get much sleep and while this may not be the <span class="fw-bold">HEALTHIEST</span> option, it certainly helps on days when you need a little boost.</p>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="bg-body shadow-sm mx-auto" style="width: 80%; height: 300px; border-radius: 21px 21px 0 0;"></div>
-          </div>
         </div>
-      
-        <div class="d-md-flex flex-md-equal w-100 my-md-3 ps-md-3">
-          <div class="bg-light me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
-            <div class="my-3 p-3">
-              <h2 class="display-5">Another headline</h2>
-              <p class="lead">And an even wittier subheading.</p>
+    </main>
+    <footer class="bg-dark py-4 mt-auto">
+        <div class="container">
+            <div class="row align-items-center justify-content-between flex-column flex-sm-row">
+                <div class="col-auto"><div class="small m-0 text-white">Copyright © This Website 2022</div></div>
+                <div class="col-auto">
+                    <a class="link-light small" href="#!">Privacy</a>
+                    <span class="text-white mx-1">·</span>
+                    <a class="link-light small" href="#!">Terms</a>
+                    <span class="text-white mx-1">·</span>
+                    <a class="link-light small" href="#!">Contact</a>
+                </div>
             </div>
-            <div class="bg-body shadow-sm mx-auto" style="width: 80%; height: 300px; border-radius: 21px 21px 0 0;"></div>
-          </div>
-          <div class="bg-light me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
-            <div class="my-3 py-3">
-              <h2 class="display-5">Another headline</h2>
-              <p class="lead">And an even wittier subheading.</p>
-            </div>
-            <div class="bg-body shadow-sm mx-auto" style="width: 80%; height: 300px; border-radius: 21px 21px 0 0;"></div>
-          </div>
         </div>
-      </main>
+    </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
   </body>
 </html>
