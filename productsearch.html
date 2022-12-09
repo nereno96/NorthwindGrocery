@@ -31,7 +31,7 @@
     </header>
     <main class="container">
         <div class="row">
-            <div class="col">
+            <div class="col-6 offset-3">
                 <select id="filterSelect" class="form-select">
                     <option value="selectOne">Select one...</option>
                     <option value="searchByCategory">Search by category</option>
@@ -39,19 +39,22 @@
                 </select>
                 <select id="categorySelect" class="form-select" style="display:none">
                 </select>
-                <table class="table" id="productTable" style="display:none">
-                    <thead class="productTableHead">
-                        <th>Name: </th>
-                        <th>Price:</th>
-                        <th>Product ID:</th>
-                    </thead>
-                    <tbody id="productTableBody">
-                    </tbody>
-                </table>
+                <div class="h-100 p-5 text-bg-dark justify-content-center rounded-3"  id="productTableDisplay" style="display:none">
+                    <table class="table text-bg-dark" id="productTable" style="display:none">
+                        <thead class="productTableHead text-bg-dark">
+                            <th>Name: </th>
+                            <th>Price:</th>
+                            <th>Product ID:</th>
+                        </thead>
+                        <tbody id="productTableBody">
+                        </tbody>
+                    </table>
+                </div>
+                
             </div>
           </div>
     </main>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
-    <script src="scripts/productsearch.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+        <script src="scripts/productsearch.js"></script>
     </body>
 </html>

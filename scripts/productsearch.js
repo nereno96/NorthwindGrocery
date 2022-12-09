@@ -3,6 +3,7 @@
 let filterSelect = document.getElementById("filterSelect");
 let categorySelect = document.getElementById("categorySelect");
 let productTable = document.getElementById("productTable");
+let productTableDisplay = document.getElementById("productTableDisplay");
 let productTableBody = document.getElementById("productTableBody");
 
 window.onload = function () {
@@ -20,6 +21,7 @@ function displayNextDropdown() {
         clearTable(productTableBody)
         categorySelect.style.display = "none";
         productTable.style.display = "block";
+        productTableDisplay.style.display = "block";
         fetch(`http://localhost:8081/api/products`)
         .then(response => response.json())
         .then(data => {
@@ -37,6 +39,7 @@ function displayNextDropdown() {
     else if (filterSelect.value == "selectOne") {
         categorySelect.style.display = "none";
         productTable.style.display = "none";
+        productTableDisplay.style.display = "none";
     }
 }
 
@@ -58,9 +61,11 @@ function categoryChosen() {
     clearTable(productTableBody)
     if(categorySelect.value == "select"){
         productTable.style.display = "none";
+        productTableDisplay.style.display = "none";
     }
     else {
         productTable.style.display = "block";
+        productTableDisplay.style.display = "block";
         fetch(`http://localhost:8081/api/products`)
         .then(response => response.json())
         .then(data => {
